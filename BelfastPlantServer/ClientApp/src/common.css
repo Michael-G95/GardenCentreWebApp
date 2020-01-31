@@ -1,0 +1,108 @@
+body{
+  /*Setting styles for whole page */
+  background-color: whitesmoke;
+  font-family: 'Roboto', sans-serif;
+
+  /*Display flex, all children of body will be displayed in rows 100% width */
+  display: flex;
+  flex-direction: column;
+}
+
+/*Header Styles*/
+header{
+  /*Limiting height of header to 20% of vh as to not take up too much viewport room*/
+  max-height: 20vh;
+  height: 20vh;
+  margin-bottom: 20px;
+}
+header img{
+  max-height: 100%;
+}
+
+/*Navigation styles*/
+nav{
+  display:flex;
+  flex-direction: column;
+  width:100%;
+}
+
+nav div{
+  flex:1;
+  margin-bottom: 20px;
+}
+
+nav .left{
+  display: flex;
+  flex-direction: row;
+  min-height: 50px;
+}
+
+nav .right{
+  /*Displayed in reverse*/
+  display: flex;
+  flex-direction: row;
+}
+
+nav .right img, nav .left img{
+  height:50px;
+}
+
+/*Nav adjustments for large screen*/
+@media only screen and (min-width:1100px){
+  nav {
+      flex-direction:row;
+  }
+  nav .left{
+      margin-right:5%;
+  }
+}
+
+nav .nav-item{
+  text-align: center;
+  display: flex;
+  border:1px solid darkgray;
+  margin: 0px 3px;
+  border-radius: 5px;
+}
+nav .nav-item span{
+  /*Apply auto margin to item in flex container to centre vertically*/
+  margin:auto;
+}
+
+nav .nav-item:hover{
+  background-color: lightgray;
+
+}
+
+nav .nav-item-current{
+  font-weight: bold;
+  font-size:120%;
+}
+nav .nav-item-current:hover{
+  background-color: whitesmoke !important;
+}
+
+nav a{
+  display: flex;
+  flex:1;
+}
+/*Style used in hiding favourites*/
+#fav-nodisplay{
+  height:0 !important;
+  width:0 !important;
+} 
+
+/*Footer Styles*/
+footer{
+  border-top:1px solid forestgreen;
+  font-size:80%;
+}
+
+a{
+  text-decoration: none !important;
+  color:black;
+}
+
+.nav-item{
+  text-transform: capitalize;
+}

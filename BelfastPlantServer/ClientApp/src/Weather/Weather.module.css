@@ -1,0 +1,83 @@
+.root{
+    display:flex;
+    flex-direction: column;
+}
+
+.input-area,aside{
+    display:flex;
+    flex-direction: column;
+    margin:10px 10px;
+}
+
+.input-area{
+    flex:3;
+}
+aside{
+    flex:5;
+    display:flex;
+}
+
+.container{
+    display:flex;
+    flex-direction: row;
+}
+
+h2{
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+    padding-bottom: 5px;
+    border-bottom: 1px solid forestgreen;
+}
+
+.button{
+    flex:1;
+    padding:6px;
+    border:1px solid darkgray;
+    margin:10px 20px;
+    border-radius: 3px;
+
+    display:flex;
+}
+
+.button span{
+    margin:auto;
+    font-weight: bold;
+}
+
+.button:hover{
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    cursor:pointer;
+}
+
+.button{
+    transition: background-color ease.2s;
+    transition:box-shadow ease .1s;
+}
+
+.selected-button{
+    background-color: lightgray;
+    padding:5px;
+    border:2px solid black;
+}
+
+.geo-button{
+    width:50%;
+    margin: 10px auto;
+}
+
+.input-group{
+    display:flex;
+    flex-direction: row;
+}
+
+.input-group input{
+    line-height: 150%;
+}
+.input-group *{
+    margin:auto;
+    margin-right: 10px;
+}
+

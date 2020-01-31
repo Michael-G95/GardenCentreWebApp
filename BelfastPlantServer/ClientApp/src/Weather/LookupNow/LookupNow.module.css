@@ -1,0 +1,19 @@
+.root{
+    display:flex;
+    flex-direction: column;
+}
+
+h3{
+    text-transform: capitalize;
+}
+
+.container{
+    display:flex;
+    flex-direction: column;
+    margin: auto 0;
+}
+
+.forecast-row{
+    display:flex;
+    flex-direction: row;
+}
